@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh;
+  }
+  
+  header {
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .dam {
+    color: #6C63FF;
+  }
+  
+  .hero {
+    height: 30%;
+    background: linear-gradient(to right, #6C63FF, #a084ff);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    background-color: #fff;
+    color: #6C63FF;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #eee;
+  }
+  
+  .about h2 {
+    margin-bottom: 20px;
+  }
+  
+  .projects {
+    padding: 50px 50px;
+    background-color: #f1f1f1;
+    height: 60%;
+    max-height: 60%;
+  }
+  
+  .projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 200%;
+  }
+  
+  .project-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    overflow-y: scroll;
+    max-height: 85%;
+    padding-bottom: 20px;
+  }
+
+  .project-grid::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+  }
+
+  .project-grid::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #6C63FF, #a084ff);
+    border-radius: 10px; /* Bordes redondeados */
+  }
+
+  .project-grid::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 10px;
+  }
+
+  .project-grid::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to right, #a084ff, #6C63FF); /* Gradiente invertido al hacer hover */
+  }
+  
+  .card {
+    perspective: 1000px;
+    width: 500px;
+    height: 300px;
+  }
+  
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+  }
+
+  .card-front p
+  {
+    font-size: 3ch;
+    font-weight: bold;
+    color: #6C63FF;
+    align-self: self-end;
+    text-shadow: 1px 1px 0px white,
+    -1px -1px 0px white,
+    1px -1px 0px white,
+    -1px 1px 0px white;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .contact {
+    padding: 60px 50px;
+    background-color: #fff;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form input, form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  form button {
+    background-color: #6C63FF;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #5848d6;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    height: 5%;
+  }
