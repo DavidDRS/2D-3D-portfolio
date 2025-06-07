@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fondo morado general */
+  body#body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #6C63FF; /* morado */
+    color: #333;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Quitar fondo blanco al título, pero mantener estilos */
+  #title {
+    background-color: transparent;  /* SIN fondo blanco */
+    color: #fff; /* Opcional: para mejor contraste sobre morado */
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow:
+      1px 1px 0px rgba(0,0,0,0.3),
+      -1px -1px 0px rgba(0,0,0,0.3),
+      1px -1px 0px rgba(0,0,0,0.3),
+      -1px 1px 0px rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+    padding: 0; /* Para quitar padding si lo había */
+  }
+  
+  /* Mantener fondo blanco para descripción y imágenes */
+  #description,
+  .images {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(108, 99, 255, 0.25);
+    padding: 30px 40px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  #description p {
+    margin-bottom: 15px;
+  }
+  
+  #description strong {
+    color: #6C63FF;
+    font-weight: 600;
+  }
+  
+  #description ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    list-style: disc;
+    color: #555;
+  }
+  
+  /* Imágenes */
+  .images {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .images img {
+    width: 45%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(108, 99, 255, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .images img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Botón morado sin fondo blanco */
+  .download-button {
+    display: inline-block;
+    background-color: white;
+    color: #6C63FF;
+    font-weight: 600;
+    padding: 14px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
+    margin: 0 auto;
+    display: block;
+    max-width: 200px;
+  }
+  
+  .download-button:hover {
+    background-color: white;
+    box-shadow: 0 6px 20px rgba(88, 72, 214, 0.5);
+  }
